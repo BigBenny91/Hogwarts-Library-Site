@@ -1,0 +1,291 @@
+// Theming on search iframe.
+div.path-search.state-list {
+	section.row {
+		padding: 0;
+	}
+
+	.navbar-record {
+		border-top: 1px solid #e7e7e7;
+		border-left: 1px solid #e7e7e7;
+		border-right: 1px solid #e7e7e7;
+		-webkit-box-shadow: 0 0 2px 0 #eee;
+		-moz-box-shadow: 0 0 2px 0 #eee;
+		box-shadow: 0 0 2px 0 #eee;
+		border-right: 0;
+
+		& * {
+			color: #777;
+		}
+
+		.navbar-brand {
+			font-size: 18px;
+		}
+
+		ul.navbar-right {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+			li {
+				a {
+					&:hover {
+						background-color: transparent;
+					}
+
+					&:active {
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	.wt-buttons {
+		a {
+			margin-right: 4px;
+		}
+	}
+}
+
+// Helpcenter theming.
+
+div.path-helpcenterlist.state-list {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+	section.row {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		&> div > div {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.list-group {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			.group-title {
+				margin-top: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid lightgrey;
+				font-size: 18px;
+			}
+		}
+
+		.list-link {
+			a {
+				text-decoration: none;
+				color: #337ab7;
+			}
+
+			.yt-icon {
+				height: 13px;
+			}
+
+			.yt-title {
+				.yt-span {
+					vertical-align: text-top;
+				}
+			}
+
+			.list-link-title {
+				margin: 2px 0;
+				font-size: 14px;
+
+				.glyphicon-link {
+					height: 15px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.list-wt {
+			.wt-title {
+				margin: 2px 0;
+				font-size: 13px;
+
+				&> a {
+					text-decoration: none;
+					color: #337ab7;
+				}
+			}
+
+			.list-play-button {
+				color: #84c441;
+				margin-right: 10px;
+			}
+
+			.glyphicon-link,
+			.list-play-button {
+				font-size: 15px;
+			}
+		}
+
+		.col-xs-1 {
+			padding: 0 0 0 15px;
+			text-align: center;
+		}
+
+		.col-xs-11 {
+			padding-left: 6px;
+		}
+	}
+
+	.navbar-record {
+		li {
+			a {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	.navbar-fixed-top {
+		border-top: 1px solid #e7e7e7;
+		border-left: 1px solid #e7e7e7;
+		border-right: 1px solid #e7e7e7;
+		-webkit-box-shadow: 0 0 2px 0 #eee;
+		-moz-box-shadow: 0 0 2px 0 #eee;
+		box-shadow: 0 0 2px 0 #eee;
+
+		& * {
+			color: #777;
+		}
+
+		.navbar-brand {
+			font-size: 18px;
+		}
+
+		ul.navbar-right {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+			li {
+				a {
+					&:hover {
+						background-color: transparent;
+					}
+
+					&:active {
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-fixed-bottom {
+		border-bottom: 1px solid #e7e7e7;
+		border-left: 1px solid #e7e7e7;
+		border-right: 1px solid #e7e7e7;
+		font-family: 'Open Sans Light', Helvetica, Arial, sans-serif;
+		height: 30px;
+		min-height: 0px;
+		color: #777;
+
+		strong {
+			font-family: 'Open Sans Light', Helvetica, Arial, sans-serif;
+			font-weight: bold;
+		}
+
+		& * {
+			font-size: 12px;
+		}
+
+		ul.navbar-right {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			margin: 0;
+		}
+
+		li {
+	    padding: 5px;
+
+			a {
+				display: inline;
+				padding: 0;
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	.wh-modal {
+		nav.navbar.navbar-default {
+			background-color: #3c3c3c;
+			box-shadow: inset 0 -11px 10px -10px #eb9214;
+
+			.navbar-brand {
+				color: lighten(#eb9214,10%);
+
+				&:hover {
+					color: lighten(#eb9214,10%);
+				}
+			}
+
+			a.btn-close:before {
+				content: "Collapse help widget";
+				margin-right: 5px;
+			}
+
+			a.btn-close {
+				&:hover {
+					color: darken(#fff, 15%);
+				}
+
+				.glyphicon-remove:hover {
+					color: #ff4d4d;
+				}
+			}
+		}
+	}
+}
+
+// Theming on search and record buttons.
+
+.row-wt-no-helpcenter {
+	margin: 10px 0;
+}
+
+.help-button {
+	padding: 6px 12px;
+	font-size: 14px;
+	border: 0;
+
+	span {
+		vertical-align: middle;
+	}
+}
+
+.btn-record-true, .btn-record-false {
+	border: 0;
+
+	span {
+		vertical-align: middle;
+	}
+
+	& * {
+		font-size: 14px;
+	}
+}
+
+div.wh-record-wrapper {
+	ul.navbar-right {
+		margin-right: 10px;
+	}
+}
+
+#widget-footer {
+	a {
+		color: #333;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}
